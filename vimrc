@@ -1,12 +1,12 @@
 set nocompatible
 syntax on
-
 set autoindent
 set ruler
 set showcmd
 set showmatch
 set hlsearch
 set incsearch
+set textwidth=78
 
 " switch window
 map <C-h> <ESC><C-W>h
@@ -15,9 +15,9 @@ map <C-k> <ESC><C-W>k
 map <C-l> <ESC><C-W>l
 
 " autocmd
-autocmd FileType python tabstop=4 | set shiftwidth=4 | set softtabstop=4
-autocmd FileType html set tabstop=2 | set shiftwidth=2 | set softtabstop=2
-autocmd FileType ruby set tabstop=2 | set shiftwidth=2 | set softtabstop=2
+filetype on
+autocmd FileType * set tabstop=4|set shiftwidth=4
+autocmd FileType xhtml set tabstop=2|set shiftwidth=2
 
 " run it
 map <F5> <ESC>:w<CR>:!python %<CR>
