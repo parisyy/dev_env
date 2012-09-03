@@ -29,9 +29,6 @@ call pathogen#infect()
 map <F3> <ESC>:NERDTreeToggle<CR>
 imap <F3> <ESC>:NERDTreeToggle<CR>
 
-" taglist
-map <F4> <ESC>:TlistToggle<CR>
-imap <F4> <ESC>:TlistToggle<CR>
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_Use_SingleClick = 1
+" tagbar
+map <F4> <ESC>:TagbarToggle<CR>
+imap <F4> <ESC>:TagbarToggle<CR>
