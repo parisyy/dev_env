@@ -33,7 +33,7 @@ sync_plugin vim-less git://github.com/groenewege/vim-less.git
 sync_plugin tagbar git://github.com/majutsushi/tagbar.git
 
 # sync numbers
-sync_plugin numbers git://github.com/myusuf3/numbers.vim.git
+# sync_plugin numbers git://github.com/myusuf3/numbers.vim.git
 
 # sync supertab
 sync_plugin supertab git://github.com/ervandew/supertab.git
