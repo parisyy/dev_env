@@ -23,14 +23,15 @@ map <C-l> <ESC><C-W>l
 
 " autocmd
 filetype on
-:autocmd BufWrite *.py %retab
+autocmd BufWrite *.py %retab
+autocmd FileType html,xhtml,htmldjango set tabstop=2 | set shiftwidth=2 | set softtabstop=2
+autocmd FileType * set tabstop=4 | set shiftwidth=4 | set softtabstop=4
 
 " run it
 map <F5> <ESC>:w<CR>:!python %<CR>
 
 " pathogen
 call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
 
 " nerdtree
 map <F3> <ESC>:NERDTreeToggle<CR>
