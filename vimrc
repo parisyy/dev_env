@@ -28,6 +28,9 @@ autocmd BufWrite *.py %retab
 autocmd FileType html,xhtml,htmldjango set tabstop=2 | set shiftwidth=2 | set softtabstop=2
 autocmd FileType * set tabstop=4 | set shiftwidth=4 | set softtabstop=4
 
+" set expandtab for python
+autocmd FileType python set expandtab
+
 " run it
 autocmd FileType python map <F5> <ESC>:w<CR>:!python %<CR>
 
@@ -40,3 +43,6 @@ imap <F3> <ESC>:NERDTreeToggle<CR>
 
 " tagbar
 map <F4> <ESC>:TagbarToggle<CR>
+
+" colorscheme: tomorrow night bright
+colorscheme Tomorrow-Night-Bright
