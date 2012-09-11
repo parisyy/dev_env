@@ -46,3 +46,7 @@ map <F4> <ESC>:TagbarToggle<CR>
 
 " colorscheme: tomorrow night bright
 colorscheme Tomorrow-Night-Bright
+
+" flake8 for python
+autocmd FileType python let g:flake8_max_line_length=99
+autocmd FileType python let g:flake8_max_complexity=10
