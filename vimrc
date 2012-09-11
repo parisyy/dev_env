@@ -1,6 +1,6 @@
 set nocompatible
 syntax on
-set nu
+set number
 set encoding=utf-8
 set t_Co=256
 set autoindent
@@ -15,6 +15,7 @@ set textwidth=78
 set cursorline
 set noerrorbells
 set laststatus=2
+set scrolloff=5
 
 " switch window
 map <C-h> <ESC><C-W>h
