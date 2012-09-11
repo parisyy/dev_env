@@ -35,3 +35,7 @@ sync_plugin tagbar git://github.com/majutsushi/tagbar.git
 # sync tomorrow-theme
 sync_plugin tomorrow-theme git://github.com/chriskempson/tomorrow-theme.git
 cd ~/.vim/bundle/tomorrow-theme && cp -r vim/colors . && cd -
+
+# sync flake8
+# easy_install flake8
+sync_plugin vim-flake8 git://github.com/nvie/vim-flake8.git
