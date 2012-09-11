@@ -1,5 +1,6 @@
 set nocompatible
 syntax on
+set nu
 set encoding=utf-8
 set t_Co=256
 set autoindent
@@ -11,7 +12,6 @@ set incsearch
 set ignorecase
 set smartcase
 set textwidth=78
-set nowrap
 set cursorline
 set noerrorbells
 set laststatus=2
