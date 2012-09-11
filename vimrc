@@ -14,6 +14,7 @@ set textwidth=78
 set nowrap
 set cursorline
 set noerrorbells
+set laststatus=2
 
 " switch window
 map <C-h> <ESC><C-W>h
@@ -28,7 +29,7 @@ autocmd FileType html,xhtml,htmldjango set tabstop=2 | set shiftwidth=2 | set so
 autocmd FileType * set tabstop=4 | set shiftwidth=4 | set softtabstop=4
 
 " run it
-map <F5> <ESC>:w<CR>:!python %<CR>
+autocmd FileType python map <F5> <ESC>:w<CR>:!python %<CR>
 
 " pathogen
 call pathogen#infect()
@@ -39,13 +40,3 @@ imap <F3> <ESC>:NERDTreeToggle<CR>
 
 " tagbar
 map <F4> <ESC>:TagbarToggle<CR>
-
-" power-line
-set laststatus=2
-let g:Powerline_symbols = 'compatible'
-
-" tomorrow-theme
-colorscheme Tomorrow-Night-Bright
-
-" python-mode
-let g:pymode_folding = 0

@@ -32,18 +32,6 @@ sync_plugin vim-less git://github.com/groenewege/vim-less.git
 # sync tagbar
 sync_plugin tagbar git://github.com/majutsushi/tagbar.git
 
-# sync numbers
-# sync_plugin numbers git://github.com/myusuf3/numbers.vim.git
-
-# sync supertab
-sync_plugin supertab git://github.com/ervandew/supertab.git
-
 # sync tomorrow-theme
 sync_plugin tomorrow-theme git://github.com/chriskempson/tomorrow-theme.git
 cd ~/.vim/bundle/tomorrow-theme && cp -r vim/colors . && cd -
-
-# sync vim-powerline
-sync_plugin vim-powerline git://github.com/Lokaltog/vim-powerline.git
-
-# sync python-mode
-sync_plugin python-mode git://github.com/klen/python-mode.git
