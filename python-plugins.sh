@@ -34,11 +34,11 @@ sync_plugin tagbar git://github.com/majutsushi/tagbar.git
 
 # sync tomorrow-theme
 sync_plugin tomorrow-theme git://github.com/chriskempson/tomorrow-theme.git
-cd ~/.vim/bundle/tomorrow-theme && cp -r vim/colors . && cd -
+cd ~/.vim/bundle/tomorrow-theme && cp -rv vim/colors . && cd -
 
 # sync flake8
 # easy_install flake8
 sync_plugin vim-flake8 git://github.com/nvie/vim-flake8.git
 
-sync_plugin vim-jade https://github.com/digitaltoad/vim-jade.git
-sync_plugin vim-indent-guides git://github.com/nathanaelkane/vim-indent-guides.git
+#sync_plugin vim-jade https://github.com/digitaltoad/vim-jade.git
+#sync_plugin vim-indent-guides git://github.com/nathanaelkane/vim-indent-guides.git
