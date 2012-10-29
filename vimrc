@@ -32,7 +32,7 @@ nmap <C-l> <C-w>l
 " Common Plugins
 " ============================================================================
 
-filetype on
+filetype off
 filetype plugin indent on
 
 " pathogen
@@ -44,6 +44,9 @@ nmap <F3> <ESC>:NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " open a nerdtree automatically when vim starts up whith no file specified
 autocmd vimenter * if !argc() | NERDTreeToggle | endif
+
+" tagbar
+nmap <F4> <ESC>:TagbarToggle<CR>
 
 " ============================================================================
 " Python Plugins
@@ -80,6 +83,7 @@ let g:flake8_cmd="/usr/local/bin/flake8"
 " ============================================================================
 
 autocmd FileType html,xhtml,htmldjango set tabstop=2 | set shiftwidth=2 | set softtabstop=2
+autocmd FileType python set tabstop=4 | set shiftwidth=4 | set softtabstop=4
 
 " ============================================================================
 " C/C++ Plugins
