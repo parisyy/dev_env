@@ -83,7 +83,7 @@ let g:flake8_cmd="/usr/local/bin/flake8"
 " ============================================================================
 
 autocmd FileType html,xhtml,htmldjango set tabstop=2 | set shiftwidth=2 | set softtabstop=2
-autocmd FileType python set tabstop=4 | set shiftwidth=4 | set softtabstop=4
+autocmd FileType * set tabstop=4 | set shiftwidth=4 | set softtabstop=4
 
 " ============================================================================
 " C/C++ Plugins
