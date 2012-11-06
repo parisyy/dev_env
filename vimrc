@@ -76,7 +76,7 @@ let g:flake8_max_complexity=10
 " check everytime when you save a python file
 autocmd BufWritePost *.py call Flake8()
 " add the path to flake8
-let g:flake8_cmd="/usr/local/bin/flake8"
+" let g:flake8_cmd="/usr/local/bin/flake8"
 
 " ============================================================================
 " HTML Plugins
