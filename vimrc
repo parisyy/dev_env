@@ -68,11 +68,11 @@ autocmd FileType python map <buffer> <F8> :call Flake8()<CR>
 " add builtins
 let g:flake8_builtins="_,apply"
 " ignore errors
-let g:flake8_ignore="E501,W293,E128"
+let g:flake8_ignore="W404,E501,W293,E128"
 " change the max line length for PEP8
 let g:flake8_max_line_length=99
 " set the maximum McCache complexity before a warning is issued
-let g:flake8_max_complexity=10
+let g:flake8_max_complexity=15
 " check everytime when you save a python file
 autocmd BufWritePost *.py call Flake8()
 " add the path to flake8
@@ -82,8 +82,8 @@ let g:flake8_cmd="/usr/local/bin/flake8"
 " HTML Plugins
 " ============================================================================
 
-autocmd FileType html,xhtml,htmldjango set tabstop=2 | set shiftwidth=2 | set softtabstop=2
 autocmd FileType * set tabstop=4 | set shiftwidth=4 | set softtabstop=4
+autocmd FileType html,xhtml,htmldjango,xml set tabstop=2 | set shiftwidth=2 | set softtabstop=2
 
 " ============================================================================
 " C/C++ Plugins
