@@ -61,7 +61,8 @@ endif
 autocmd FileType python map <F5> <ESC>:w<CR>:shell<CR>
 
 " colorcheme
-colorscheme Tomorrow-Night-Bright
+" colorscheme Tomorrow-Night-Bright
+colorscheme kolor
 
 " flake8
 autocmd FileType python map <buffer> <F8> :call Flake8()<CR>
@@ -76,7 +77,7 @@ let g:flake8_max_complexity=15
 " check everytime when you save a python file
 autocmd BufWritePost *.py call Flake8()
 " add the path to flake8
-" let g:flake8_cmd="/usr/local/bin/flake8"
+let g:flake8_cmd="/usr/local/bin/flake8"
 
 " ============================================================================
 " HTML Plugins
