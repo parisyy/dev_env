@@ -46,3 +46,5 @@ sync_plugin vim-flake8 git://github.com/nvie/vim-flake8.git
 sync_plugin nginx-vim-syntax git://github.com/andersjanmyr/nginx-vim-syntax.git
 
 sync_plugin vim-kolor git://github.com/zeis/vim-kolor.git
+
+#sync_plugin python-mode git://github.com/klen/python-mode.git
